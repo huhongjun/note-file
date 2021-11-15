@@ -2,7 +2,7 @@
 	"name": "note-file",
 	"displayName": "note-file",
 	"description": "add note for project files",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"author": "pastoral",
 	"publisher": "pastoral",
 	"engines": {
@@ -44,5 +44,9 @@
 		"typescript": "^4.4.4",
 		"@vscode/test-electron": "^1.6.2"
 	},
-	"dependencies": {}
+	"dependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/huhongjun/note-file.git"
+	}
 }

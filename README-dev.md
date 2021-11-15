@@ -27,11 +27,12 @@ mcr.microsoft.com/vscode/devcontainers/repos/microsoft/vscode
     yo code
 
     npm remove vsce && npm install -g vsce@1.103.1
-    vsce package 
-    vsce publish
+    nvm install v12.22.1 && nvm use v12.22.1
 
-    vsce login Pastoral #token=qj2ijxgavqzznbl2ye3h4gzaam44qqedxfojioz75uuvs4qishnq
-    vsce create-publisher pastoral
+    # toker=735rwqurs4jhc4naz7d257l5zwt73qbmcolf7jiyg3wzhnmmf27a
+    vsce login pastoral
+    vsce package && vsce publish
+
     // 增量发布， 版本号：major.minor.patch
     vsce publish patch
     vsce publish minor
