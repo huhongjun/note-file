@@ -19,11 +19,15 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage('Hello World from note-file!');
 	});
-	
-	let fdp = NoteDecorationProvider.instance
-	let dp_fdp = vscode.window.registerFileDecorationProvider(fdp)
-
 	context.subscriptions.push(disposable);
+	
+	let fdp = NoteDecorationProvider.instance;
+	fdp.updateFileDecoration();
+    
+	let watcher = vscode.workspace.createFileSystemWatcher('**/.vscode/file-notes.json', false /*ignoreCreateEvents*/, false /*ignoreChangeEvents*/, false /*ignoreDeleteEvents*/);
+    watcher.onDidChange((e: vscode.Uri) => fdp.updateFileDecoration());
+    watcher.onDidDelete((e: vscode.Uri) => vscode.window.showInformationMessage('delete'));
+    watcher.onDidCreate((e: vscode.Uri) => vscode.window.showInformationMessage('create'));
 }
 
 // this method is called when your extension is deactivated

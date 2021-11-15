@@ -1,6 +1,6 @@
 {
 	"name": "note-file",
-	"displayName": "note-file",
+	"displayName": "Note Files",
 	"description": "add note for project files",
 	"version": "0.0.3",
 	"author": "pastoral",
@@ -8,12 +8,17 @@
 	"engines": {
 		"vscode": "^1.62.0"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/huhongjun/note-file.git"
+	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
 		"workspaceContains:.vscode/file-notes.json"
 	],
+	"icon": "resources/icon.png",
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
@@ -44,9 +49,5 @@
 		"typescript": "^4.4.4",
 		"@vscode/test-electron": "^1.6.2"
 	},
-	"dependencies": {},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/huhongjun/note-file.git"
-	}
+	"dependencies": {}
 }
