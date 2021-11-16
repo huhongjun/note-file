@@ -2,7 +2,7 @@
 	"name": "note-file",
 	"displayName": "Note Files",
 	"description": "add note for project files",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"author": "pastoral",
 	"publisher": "pastoral",
 	"engines": {
@@ -23,10 +23,21 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "note-file.helloWorld",
-				"title": "Hello World"
+				"command": "note-file.setNote",
+				"title": "Set Note for file ...",
+				"shortTitle": "note",
+				"category": "Note"
 			}
-		]
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "note-file.setNote",
+					"when": "resourceScheme == file",
+					"group": "2_workspace"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",

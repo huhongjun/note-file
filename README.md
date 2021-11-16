@@ -29,7 +29,15 @@ Users appreciate release notes as you update your extension.
 
 ### 0.0.1
 
-Initial release of ...
+Initial release
+
+### 0.0.3
+
+File watcher
+
+### 0.0.4
+
+Explorer context menu for set note
 
 
 **Enjoy!**
