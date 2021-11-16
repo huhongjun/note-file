@@ -2,7 +2,7 @@
 	"name": "note-file",
 	"displayName": "Note Files",
 	"description": "add note for project files",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"author": "pastoral",
 	"publisher": "pastoral",
 	"engines": {

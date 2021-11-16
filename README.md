@@ -4,22 +4,26 @@
 
 ## Features
 
-    add memo by .vscode/file-notes.json
+    add note by .vscode/file-notes.json
 
 ![note file and hover tooltip](https://raw.githubusercontent.com/huhongjun/note-file/master/images/note-file.png)
 
 ## Requirements
 
+
+## Extension Settings
+
     Create .vscode/file-notes.json manually.
     Once extension checked the file, it will be activated!
 
+.vscode/file-notes.json example:
 ```
 {
-	"/README.md": "README file for project."
+	"/README.md": "README file for project.",
+    "/src/main.go": "main file for project.",
+    "out": "Build output folder."
 }
 ```
-
-## Extension Settings
 
 ## Known Issues
 
