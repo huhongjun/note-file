@@ -1,0 +1,5 @@
+{
+	"/README.md": ">>我是note-file附加注释 -> README file for project note-file 1.",
+	"/测试/a.ts": ">>我是note-file附加注释 -> 1111",
+	"/node_modules": ">>我是note-file附加注释 -> nodejs install"
+}
